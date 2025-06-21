@@ -1,3 +1,5 @@
+Feito por: Alex, Tiago, Douglas, e jackeson
+
 
 # 🛍️ Catálogo de Produtos - Projeto Web
 
@@ -32,7 +34,7 @@ Projeto desenvolvido como catálogo de produtos para uma loja, com páginas de n
 1. **Clone ou baixe o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/TiagoSantos9/Site_Moda
 ```
 ou baixe o arquivo `.zip` e extraia.
 
@@ -40,7 +42,7 @@ ou baixe o arquivo `.zip` e extraia.
 
 3. **Execute localmente:**
 - Clique duas vezes no arquivo `Home.html` **ou**
-- No VSCode, utilize a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) e clique em "Go Live".
+- No VSCode, utilize a extensão [Live Server]e clique em "Go Live".
 
 ## 🏗️ Scripts de Build, Lint e Testes
 

@@ -1,4 +1,5 @@
 :root {
+    /* Aqui definimos as variáveis padrões para o tema claro */
   --body-bg: #f8f9fa;
   --text-color: #212529;
   --navbar-bg: #ffffff;
@@ -14,11 +15,12 @@
   --accent-color: #000000;
   --btn-primary-bg: #000000;
   --btn-primary-color: #ffffff;
-  --btn-warning-bg: #ffc107;
+  --btn-warning-bg: #000000;
   --btn-warning-color: #212529;
 }
 
 html[data-theme="dark"] {
+   /* Aqui as variáveis para o tema escuro, que substituem as acima quando data-theme="dark" */
   --body-bg: #1a1a1a;
   --text-color: #f8f9fa;
   --navbar-bg: #1a1a1a;
