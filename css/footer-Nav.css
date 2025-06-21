@@ -1,0 +1,224 @@
+:root {
+  --body-bg: #f8f9fa;
+  --text-color: #212529;
+  --navbar-bg: #ffffff;
+  --navbar-text-color: #212529;
+  --navbar-hover-color: #a4a4a4;
+  --sidebar-bg: #e9ecef;
+  --sidebar-text-color: #212529;
+  --footer-bg: #343a40;
+  --footer-text-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-text-color: #212529;
+  --border-color: #dee2e6;
+  --accent-color: #000000;
+  --btn-primary-bg: #000000;
+  --btn-primary-color: #ffffff;
+  --btn-warning-bg: #ffc107;
+  --btn-warning-color: #212529;
+}
+
+html[data-theme="dark"] {
+  --body-bg: #1a1a1a;
+  --text-color: #f8f9fa;
+  --navbar-bg: #1a1a1a;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-color: #000000;
+  --sidebar-bg: #888888;
+  --sidebar-text-color: #000000;
+  --footer-bg: #222;
+  --footer-text-color: #fff;
+  --card-bg: #2b2b2b;
+  --card-text-color: #f8f9fa;
+  --border-color: #444;
+  --accent-color: #000000;
+  --btn-primary-bg: #ffffff;
+  --btn-primary-color: #212529;
+  --btn-warning-bg: #f1c40f;
+  --btn-warning-color: #212529;
+}
+
+/* Input de busca */
+form[role="search"] input.form-control {
+  background-color: var(--body-bg); /* Cor de fundo do input */
+  color: var(--text-color);          /* Cor do texto */
+  border: 1px solid var(--border-color); /* Cor da borda */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+form[role="search"] input.form-control::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+/* Quando o input estiver focado */
+form[role="search"] input.form-control:focus {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--accent-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--accent-color);
+}
+
+.btn-search {
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  border: 2px solid var(--btn-primary-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: var(--btn-primary-color);
+  color: var(--btn-primary-bg);
+  border-color: var(--btn-primary-color);
+}
+
+.custom-navbar {
+  background-color: var(--navbar-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+.custom-navbar .nav-link,
+.custom-navbar .navbar-brand {
+  color: var(--navbar-text-color) ;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .navbar-brand:hover {
+  color: var(--navbar-hover-color) ;
+}
+
+.icon-cart-svg {
+
+fill: var(--navbar-text-color);
+width: 2rem;
+height: 2rem;
+margin-right: 1rem;
+cursor: pointer;
+transition: fill 0.3s ease;
+}
+
+
+.icon-cart-svg:hover {
+fill: var(--accent-color);
+}
+
+
+.theme-toggle-icon {
+width: 1.5rem;
+height: 1.5rem;
+fill: var(--navbar-text-color);
+transition: fill 0.3s ease;
+}
+
+
+.theme-toggle-button {
+background: none;
+border: none;
+cursor: pointer;
+padding: 0.25rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 0.5rem;
+transition: background-color 0.3s ease;
+}
+
+
+.theme-toggle-button:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+a svg {
+cursor: pointer;
+}
+a[href="Carrinho.html"] {
+display: inline-flex;
+align-items: center;
+position: relative;
+z-index: 30;
+justify-content: center;
+width: 40px;  /* área clicável maior */
+height: 40px;
+cursor: pointer;
+}
+
+
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text-color);
+  padding: 2.5rem 1.25rem;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  margin-top: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.footer-link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
+.footer-link:hover {
+  color: var(--accent-color);
+}
+
+
+.footer-social {
+  color: var(--footer-text-color);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+
+.footer-social:hover {
+  color: var(--accent-color);
+}
+
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.offcanvas {
+  background-color: var(--sidebar-bg);
+  color: var(--sidebar-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.offcanvas-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+.offcanvas-title {
+  color: var(--sidebar-text-color);
+}
+
+
+.offcanvas-body .nav-link {
+  color: var(--sidebar-text-color);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.offcanvas-body .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--accent-color);
+}
+

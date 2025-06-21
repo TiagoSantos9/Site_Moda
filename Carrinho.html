@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Carrinho.css" />
+  
+  <link rel="stylesheet" href="css/footer-Nav.css">
+
+</head>
+
+<body class=" py-4">
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+          <img src="img/NAKTHOS-DouradoTransparente.png" alt="NAKTHOS" height="55">
+        </a>
+
+        <div class="d-flex align-items-center order-lg-3">
+          <button class="theme-toggle-button me-3" aria-label="Alternar tema" id="theme-toggle">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"
+              data-theme-icon="light">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-theme-icon="dark">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="Home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalogo de Produtos.html">Catálogo de Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="Detalhe de Produtos.html">Detalhe de Produto</a></li>
+          </ul>
+          <form class="d-flex align-items-center" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-search" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="text-center mb-4">Carrinho de Compras</h1>
+
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped align-middle text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+          <tr>
+            <td>Camisa</td>
+            <td>R$ 50,00</td>
+            <td><input type="number" class="form-control" value="1" min="1" onchange="updateSubtotal(this)" /></td>
+            <td class="subtotal">R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>Calça Jeans</td>
+            <td>R$ 120,00</td>
+            <td><input type="number" class="form-control" value="2" min="1" onchange="updateSubtotal(this)" /></td>
+            <td class="subtotal">R$ 240,00</td>
+          </tr>
+          <tr>
+            <td>Tênis</td>
+            <td>R$ 200,00</td>
+            <td><input type="number" class="form-control" value="1" min="1" onchange="updateSubtotal(this)" /></td>
+            <td class="subtotal">R$ 200,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="text-end fs-5 fw-semibold" id="cart-total">Total: R$ 490,00</div>
+
+    <div class="d-flex justify-content-end gap-2 mt-3">
+      <button class="btn btn-success" onclick="updateCart()">Atualizar</button>
+      <button class="btn btn-info" onclick="checkout()">Finalizar Compra</button>
+      <button class="btn btn-danger" onclick="clearCart()">Limpar Carrinho</button>
+    </div>
+  </main>
+
+
+  <footer class="footer bg-dark text-white pt-5 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5>Institucional</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Sobre Nós</a></li>
+            <li><a href="#" class="footer-link">Carreiras</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Imprensa</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Redes Sociais</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="mb-2">
+              <input type="email" class="form-control" placeholder="Seu e-mail" required>
+            </div>
+            <button class="btn btn-warning w-100" type="submit">Inscrever</button>
+          </form>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Contato</h5>
+          <p>Email: NAKTHOS@gmail.com</p>
+          <p>Tel: (28) 1234-5678</p>
+          <p>Endereço: Prq Getulio Vargas - Centro, 29500-000 - Alegre,ES</p>
+        </div>
+      </div>
+      <div class="row border-top pt-3 mt-4">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 NAKTHOS. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="footer-link me-2">Política de Privacidade</a>
+          <a href="#" class="footer-link">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/Themer.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        calculateCartTotal();
+    });
+    
+    // Atualiza o subtotal de um item com base na quantidade alterada
+    function updateSubtotal(inputElement) {
+        const row = inputElement.closest('tr');
+        const priceElement = row.children[1]; // Segunda coluna é o Preço
+        const subtotalElement = row.children[3]; // Quarta coluna é o Subtotal
+    
+        const priceText = priceElement.innerText;
+        const price = parseFloat(priceText.replace('R$', '').replace(',', '.').trim());
+        const quantity = parseInt(inputElement.value);
+    
+        const subtotal = price * quantity;
+        subtotalElement.innerText = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+    
+        calculateCartTotal();
+    }
+    
+    // Calcula o total do carrinho somando todos os subtotais
+    function calculateCartTotal() {
+        const cartBody = document.getElementById('cart-body');
+        const subtotalElements = cartBody.getElementsByClassName('subtotal');
+        let total = 0;
+    
+        for (let i = 0; i < subtotalElements.length; i++) {
+            const subtotalText = subtotalElements[i].innerText;
+            const subtotal = parseFloat(subtotalText.replace('R$', '').replace(',', '.').trim());
+            total += subtotal;
+        }
+    
+        document.getElementById('cart-total').innerText = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+    }
+    
+    // Recalcula todos os subtotais e o total do carrinho
+    // É útil se você adicionar/remover itens dinamicamente
+    // ou se o usuário clicar em um botão "Atualizar" para confirmar alterações
+    function updateCart() {
+        const quantityInputs = document.querySelectorAll('#cart-body input[type="number"]');
+        quantityInputs.forEach(input => updateSubtotal(input));
+        alert('Carrinho atualizado!');
+    }
+    
+    // Finaliza a compra mostrando o valor total
+    function checkout() {
+        const totalElement = document.getElementById('cart-total');
+        const totalText = totalElement.innerText;
+        alert(`Compra finalizada! ${totalText}.`);
+    }
+    
+    // Limpa todos os itens do carrinho
+    function clearCart() {
+        const cartBody = document.getElementById('cart-body');
+        cartBody.innerHTML = ''; // Limpa todas as linhas do carrinho
+        calculateCartTotal(); // Recalcula o total, que agora será R$ 0,00
+        alert('Carrinho limpo!');
+    }
+    </script>
+    
+</body>
+
+</html>

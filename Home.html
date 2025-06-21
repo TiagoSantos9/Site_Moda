@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NAKTHOS - Sua Loja Online</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/footer-Nav.css">
+    <link rel="stylesheet" href="css/Home.css">
+
+</head>
+
+
+<body class="d-flex flex-column min-vh-100">
+
+
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html">
+          <img src="img/NAKTHOS-DouradoTransparente.png" alt="NAKTHOS" height="55">
+        </a>
+
+
+        <div class="d-flex align-items-center order-lg-3">
+          <button class="theme-toggle-button me-3" aria-label="Alternar tema" id="theme-toggle">
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"
+              data-theme-icon="light">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="theme-toggle-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-theme-icon="dark">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <a href="Carrinho.html" title="Meu Carrinho"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+              <path
+                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+            </svg></a>
+
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogo de Produtos.html">Catálogo de Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Detalhe de Produtos.html">Detalhe de Produto</a>
+            </li>
+          </ul>
+          <form class="d-flex align-items-center" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-search" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="container-fluid p-0 d-flex flex-column flex-grow-1">
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/images 1.webp" class="d-block w-100" alt="Promoção de Verão">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Nova Coleção Masculina</h5>
+            <p>Moda urbana, sofisticada e cheia de personalidade. Confira!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/images 3.webp" class="d-block w-100" alt="Lançamento Nova Coleção">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Frete Grátis para todo o Brasil!</h5>
+            <p>Aproveite e compre sem sair de casa.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/images 2.webp" class="d-block w-100" alt="Frete Grátis">
+          <div class="carousel-caption d-none d-sm-block">
+            <h5>Nova Coleção Chegou!</h5>
+            <p> Descubra as últimas tendências da moda fitness.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+
+
+
+    <div class="container mt-4 flex-grow-1 d-flex flex-column">
+      <div class="row flex-grow-1">
+
+
+        <div class="col-md-3 d-flex flex-column">
+          <div class="bg-light p-3 rounded flex-grow-0 mb-4 sidebar">
+            <h4 class="text-center border-bottom pb-2">Categorias</h4>
+            <a href="#" class="d-block py-2" data-category="acessorios">Acessórios</a>
+            <a href="#" class="d-block py-2" data-category="casacos">Casacos</a>
+            <a href="#" class="d-block py-2" data-category="camisas">Camisas</a>
+            <a href="#" class="d-block py-2" data-category="Bermudas">Bermudas</a>
+            <a href="#" class="d-block py-2" data-category="calcas">Calças</a>
+
+            <a href="#" class="d-block py-2" data-category="Shorts">Shorts</a>
+
+
+            <a href="#" class="d-block py-2" data-category="calcados">Calçados</a>
+
+
+          </div>
+
+
+          <div class="bg-light p-3 rounded flex-grow-0 sidebar">
+            <h4 class="text-center border-bottom pb-2">Filtrar por Preço</h4>
+            <label for="priceRange" class="form-label">Preço: R$ <span id="currentPriceMin">0</span> - R$ <span
+                id="currentPriceMax">500</span></label>
+            <input type="range" class="form-range price-range-slider" id="priceRangeMin" min="0" max="500" value="0">
+            <input type="range" class="form-range price-range-slider" id="priceRangeMax" min="0" max="500" value="500">
+          </div>
+        </div>
+
+
+        <div class="col-md-9">
+          <h1 class="mb-4">Mais Vendidos</h1>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/camiseta exportiva.jpg" class="card-img-top" alt="Produto 1">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Esportiva</h5>
+                  <p class="card-text">Conforto e estilo para o seu treino.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Legging Alta Compressão.jpg" class="card-img-top" alt="Produto 2">
+                <div class="card-body">
+                  <h5 class="card-title">Legging Alta Compressão</h5>
+                  <p class="card-text">Suporte ideal para alta performance.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Tenis.jpg" class="card-img-top" alt="Produto 3">
+                <div class="card-body">
+                  <h5 class="card-title">
+                    Tênis Mizuno 4</h5>
+                  <p class="card-text">Leveza e amortecimento a cada passo.</p>
+                  <a href="Detalhe de Produtos.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Jaqueta Corta-Vento.jpg" class="card-img-top" alt="Produto 4">
+                <div class="card-body">
+                  <h5 class="card-title">Jaqueta Corta-Vento</h5>
+                  <p class="card-text">Proteção contra vento e chuva leve.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Top Fitness.jpg" class="card-img-top" alt="Produto 5">
+                <div class="card-body">
+                  <h5 class="card-title">Top Fitness</h5>
+                  <p class="card-text">Sustentação e conforto para seus exercícios.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Short de Treino.jpg" class="card-img-top" alt="Produto 6">
+                <div class="card-body">
+                  <h5 class="card-title">Short de Treino</h5>
+                  <p class="card-text">Liberdade de movimento e respirabilidade.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Garrafa Térmica.jpg" class="card-img-top" alt="Produto 7">
+                <div class="card-body">
+                  <h5 class="card-title">Garrafa Térmica</h5>
+                  <p class="card-text">Hidrate-se com estilo e praticidade.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="card">
+                <img src="img/Meia de Compressão.jpg" class="card-img-top" alt="Produto 8">
+                <div class="card-body">
+                  <h5 class="card-title">Meia de Compressão</h5>
+                  <p class="card-text">Melhore sua circulação e recuperação.</p>
+                  <a href="#" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h1 class="mb-4 mt-5">Novidades</h1>
+          <div class="row" id="novidades-list">
+            <div class="col-md-4 col-sm-6 mb-4" data-category="calcas" data-price="120">
+              <div class="card">
+                <img src="img/Calça Jogger Confort.jpg" class="card-img-top" alt="Novidade 1">
+                <div class="card-body">
+                  <h5 class="card-title">Calça Jogger Confort</h5>
+                  <p class="card-text">R$ 120,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="blusas" data-price="85">
+              <div class="card">
+                <img src="img/Blusa Dry Fit Premium.jpg" class="card-img-top" alt="Novidade 2">
+                <div class="card-body">
+                  <h5 class="card-title">Blusa Dry Fit Premium</h5>
+                  <p class="card-text">R$ 85,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="acessorios" data-price="45">
+              <div class="card">
+                <img src="img/Cinto de Hidratação.jpg" class="card-img-top" alt="Novidade 3">
+                <div class="card-body">
+                  <h5 class="card-title">Cinto de Hidratação</h5>
+                  <p class="card-text">R$ 45,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="casacos" data-price="250">
+              <div class="card">
+                <img src="img/Moletom Canguru Quentinho.jpg" class="card-img-top" alt="Novidade 4">
+                <div class="card-body">
+                  <h5 class="card-title">Moletom Canguru Quentinho</h5>
+                  <p class="card-text">R$ 250,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="calcados" data-price="300">
+              <div class="card">
+                <img src="img/Sandália Esportiva.jpg" class="card-img-top" alt="Novidade 5">
+                <div class="card-body">
+                  <h5 class="card-title">Sandália Esportiva</h5>
+                  <p class="card-text">R$ 300,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="camisas" data-price="90">
+              <div class="card">
+                <img src="img/Camisa Polo UV.jpg" class="card-img-top" alt="Novidade 6">
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Polo UV</h5>
+                  <p class="card-text">R$ 90,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="blusas" data-price="70">
+              <div class="card">
+                <img src="img/Regata Fitness.jpg" class="card-img-top" alt="Novidade 7">
+                <div class="card-body">
+                  <h5 class="card-title">Regata Fitness</h5>
+                  <p class="card-text">R$ 70,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4" data-category="acessorios" data-price="20">
+              <div class="card">
+                <img src="img/Faixa de Cabelo Esportiva.jpg" class="card-img-top" alt="Novidade 8">
+                <div class="card-body">
+                  <h5 class="card-title">Faixa de Cabelo Esportiva</h5>
+                  <p class="card-text">R$ 20,00</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h1 class="mb-4 mt-5">O que dizem nossos clientes</h1>
+          <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Depoimento 1"></button>
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"
+                aria-label="Depoimento 2"></button>
+              <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"
+                aria-label="Depoimento 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-card text-center">
+                  <p class="lead">"As roupas da NAKTHOS são incríveis! Conforto e qualidade em cada peça. Recomendo
+                    muito!"</p>
+                  <p class="fw-bold">- Maria Silva</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-card text-center">
+                  <p class="lead">"Amei o atendimento e a rapidez na entrega. Os produtos superaram minhas
+                    expectativas."</p>
+                  <p class="fw-bold">- João Oliveira</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-card text-center">
+                  <p class="lead">"Finalmente encontrei roupas fitness que combinam com meu estilo e me dão liberdade
+                    para treinar."</p>
+                  <p class="fw-bold">- Ana Costa</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer bg-dark text-white pt-5 mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-4">
+          <h5>Institucional</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="footer-link">Sobre Nós</a></li>
+            <li><a href="#" class="footer-link">Carreiras</a></li>
+            <li><a href="#" class="footer-link">Blog</a></li>
+            <li><a href="#" class="footer-link">Imprensa</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Redes Sociais</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="footer-social" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Newsletter</h5>
+          <form>
+            <div class="mb-2">
+              <input type="email" class="form-control" placeholder="Seu e-mail" required>
+            </div>
+            <button class="btn btn-warning w-100" type="submit">Inscrever</button>
+          </form>
+        </div>
+
+
+        <div class="col-md-3 mb-4">
+          <h5>Contato</h5>
+          <p>Email: NAKTHOS@gmail.com</p>
+          <p>Tel: (28) 1234-5678</p>
+          <p>Endereço: Prq Getulio Vargas - Centro, 29500-000 - Alegre,ES</p>
+        </div>
+      </div>
+      <div class="row border-top pt-3 mt-4">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2025 NAKTHOS. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="footer-link me-2">Política de Privacidade</a>
+          <a href="#" class="footer-link">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  
+<script>
+  const priceMin = document.getElementById('priceRangeMin');
+  const priceMax = document.getElementById('priceRangeMax');
+  const currentPriceMin = document.getElementById('currentPriceMin');
+  const currentPriceMax = document.getElementById('currentPriceMax');
+  const produtos = document.querySelectorAll('#novidades-list .col-md-4');
+
+  function updatePrices() {
+    let min = parseInt(priceMin.value);
+    let max = parseInt(priceMax.value);
+
+    // Garante que o mínimo nunca passe do máximo
+    if (min > max) {
+      const temp = min;
+      min = max;
+      max = temp;
+    }
+
+    currentPriceMin.textContent = min;
+    currentPriceMax.textContent = max;
+
+    produtos.forEach(produto => {
+      const preco = parseInt(produto.getAttribute('data-price'));
+      if (preco >= min && preco <= max) {
+        produto.style.display = 'block';
+      } else {
+        produto.style.display = 'none';
+      }
+    });
+  }
+
+  priceMin.addEventListener('input', updatePrices);
+  priceMax.addEventListener('input', updatePrices);
+
+  // Executa uma vez ao carregar
+  updatePrices();
+</script>
+
+<script src="js/Themer.js"></script>
+</body>
+
+
+</html>
