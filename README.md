@@ -1,4 +1,4 @@
-
+Feito por: Alex, Douglas, Jackeson, e Tiago
 
 
 # 🛍️ Catálogo de Produtos - Projeto Web
