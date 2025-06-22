@@ -1,0 +1,113 @@
+:root {
+  --body-bg: #f8f9fa;
+  --text-color: #212529;
+  --navbar-bg: #ffffff;
+  --navbar-text-color: #212529;
+  --navbar-hover-color: #000000;
+  --sidebar-bg: #e9ecef;
+  --sidebar-text-color: #212529;
+  --footer-bg: #343a40;
+  --footer-text-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --card-text-color: #212529;
+  --border-color: #dee2e6;
+  --accent-color: #000000;
+  --btn-primary-bg: #000000;
+  --btn-primary-color: #ffffff;
+  --btn-warning-bg: #ffc107;
+  --btn-warning-color: #212529;
+}
+
+html[data-theme="dark"] {
+  --body-bg: #1a1a1a;
+  --text-color: #f8f9fa;
+  --navbar-bg: #1a1a1a;
+  --navbar-text-color: #ffffff;
+  --navbar-hover-color: #000000;
+  --sidebar-bg: #888888;
+  --sidebar-text-color: #000000;
+  --footer-bg: #222;
+  --footer-text-color: #fff;
+  --card-bg: #2b2b2b;
+  --card-text-color: #f8f9fa;
+  --border-color: #444;
+  --accent-color: #ffffff;
+  --btn-primary-bg: #ffffff;
+  --btn-primary-color: #212529;
+  --btn-warning-bg: #f1c40f;
+  --btn-warning-color: #212529;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  padding-top: 80px; /* por causa da navbar fixa */
+}
+main {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 4rem; 
+}
+
+
+h1 {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.table thead th {
+  background-color: #dee2e6;
+  color: #000000;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  color: rgb(0, 0, 0);
+}
+
+.btn {
+  min-width: 140px;
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  border: none;
+}
+
+.btn-warning {
+  background-color: var(--btn-warning-bg);
+  color: #000000;
+  border: none;
+}
+
+.form-control[type="number"] {
+  max-width: 80px;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #007bff;
+}
+
+#cart-total {
+  border-top: 2px solid var(--border-color);
+  padding-top: 10px;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+
+a {
+  color: var(--navbar-hover-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}

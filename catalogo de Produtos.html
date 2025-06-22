@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html data-theme="dark" lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Castálogo de produtos</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link href="css/Home.css" rel="stylesheet" />
+    <link href="css/footer-Nav.css" rel="stylesheet" />
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img alt="NAKTHOS" height="55" src="img/NAKTHOS-DouradoTransparente.png" />
+            </a>
+            <div class="d-flex align-items-center order-lg-3">
+                <button aria-label="Alternar tema" class="theme-toggle-button me-3" id="theme-toggle">
+                    <svg class="theme-toggle-icon" data-theme-icon="light" fill="currentColor" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="display: none;"
+                        viewbox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" x2="12" y1="1" y2="3"></line>
+                        <line x1="12" x2="12" y1="21" y2="23"></line>
+                        <line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+                        <line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+                        <line x1="1" x2="3" y1="12" y2="12"></line>
+                        <line x1="21" x2="23" y1="12" y2="12"></line>
+                        <line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+                        <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+                    </svg>
+                    <svg class="theme-toggle-icon" data-theme-icon="dark" fill="currentColor" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="Carrinho.html" title="Meu Carrinho"> <svg class="bi bi-cart2" fill="currentColor" height="16"
+                        viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0">
+                        </path>
+                    </svg></a>
+                <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarTogglerDemo02" data-bs-toggle="collapse"
+                    type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo de Produtos.html">Catálogo de Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Detalhe de Produtos.html">Detalhe de Produto</a>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center" role="search">
+                    <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search" />
+                    <button class="btn btn-search" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container my-4">
+        <!-- filtros -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-funnel"></i> Filtros e Busca
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label class="form-label" for="busca">Buscar produto:</label>
+                        <input class="form-control" id="busca" placeholder="Ex: vestido, calça..." type="text" />
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label" for="categoria">Categoria:</label>
+                        <select class="form-select" id="categoria">
+                            <option value="">Todas</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="infantil">Infantil</option>
+                            <option value="acessorios">Acessórios</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label" for="preco">Preço máximo:</label>
+                        <input class="form-range" id="preco" max="500" min="0" type="range" value="500" />
+                        <small class="text-muted">R$ <span id="precoValor">500</span></small>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label" for="ordenacao">Ordenar por:</label>
+                        <select class="form-select" id="ordenacao">
+                            <option value="nome">Nome A-Z</option>
+                            <option value="preco-menor">Menor preço</option>
+                            <option value="preco-maior">Maior preço</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label"> </label>
+                        <div class="d-grid gap-2 d-md-flex">
+                            <button class="btn btn-primary" id="btnFiltrar">
+                                <i class="bi bi-search"></i> Filtrar
+                            </button>
+                            <button class="btn btn-outline-secondary" id="btnLimpar">
+                                <i class="bi bi-arrow-clockwise"></i> Limpar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- resultados -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <p class="text-muted mb-0">
+                    Mostrando <span class="fw-bold" id="resultados">0</span> produtos
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="text-muted mb-0">
+                    Página <span class="fw-bold" id="paginaAtual">1</span> de
+                    <span class="fw-bold" id="totalPaginas">1</span>
+                </p>
+            </div>
+        </div>
+        <!-- grid -->
+        <div class="row" id="listaProdutos">
+            <!-- produtos com JS entram aqui -->
+        </div>
+        <!-- paginação -->
+        <nav aria-label="Navegação de páginas" class="mt-4">
+            <ul class="pagination justify-content-center" id="paginacao">
+                <!-- a paginação é feita no js também -->
+            </ul>
+        </nav>
+    </div>
+</main>
+<footer class="footer bg-dark text-white pt-5 mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5>Institucional</h5>
+                <ul class="list-unstyled">
+                    <li><a class="footer-link" href="#">Sobre Nós</a></li>
+                    <li><a class="footer-link" href="#">Carreiras</a></li>
+                    <li><a class="footer-link" href="#">Blog</a></li>
+                    <li><a class="footer-link" href="#">Imprensa</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Redes Sociais</h5>
+                <div class="d-flex gap-3">
+                    <a aria-label="Facebook" class="footer-social" href="#"><i class="bi bi-facebook"></i></a>
+                    <a aria-label="Instagram" class="footer-social" href="#"><i class="bi bi-instagram"></i></a>
+                    <a aria-label="Twitter" class="footer-social" href="#"><i class="bi bi-twitter"></i></a>
+                    <a aria-label="YouTube" class="footer-social" href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Newsletter</h5>
+                <form>
+                    <div class="mb-2">
+                        <input class="form-control" placeholder="Seu e-mail" required="" type="email" />
+                    </div>
+                    <button class="btn btn-warning w-100" type="submit">Inscrever</button>
+                </form>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Contato</h5>
+                <p>Email: NAKTHOS@gmail.com</p>
+                <p>Tel: (28) 1234-5678</p>
+                <p>Endereço: Prq Getulio Vargas - Centro, 29500-000 - Alegre,ES</p>
+            </div>
+        </div>
+        <div class="row border-top pt-3 mt-4">
+            <div class="col-md-6 text-center text-md-start">
+                <p>© 2025 NAKTHOS. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a class="footer-link me-2" href="#">Política de Privacidade</a>
+                <a class="footer-link" href="#">Termos de Uso</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<body>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/Themer.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+
+</html>
