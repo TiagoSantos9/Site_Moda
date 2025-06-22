@@ -1,6 +1,5 @@
 
 
-
 # 🛍️ Catálogo de Produtos - Projeto Web
 
 Projeto desenvolvido como catálogo de produtos para uma loja, com páginas de navegação, detalhes dos produtos e carrinho de compras.
